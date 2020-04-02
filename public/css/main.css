@@ -1,0 +1,248 @@
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+body {
+  margin: 0;
+  background-color: #324362;
+}
+
+ul {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+* {
+  font-family: "Noto Serif TC", serif;
+  word-wrap: break-word;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 100%;
+  overflow: hidden;
+}
+
+main #content-left {
+  box-shadow: 7px 0px 5px rgba(0, 0, 0, 0.3);
+  background-color: #324362;
+  z-index: 5;
+  width: 350px;
+}
+
+@media (max-width: 1024px) {
+  main #content-left {
+    width: 200px;
+  }
+}
+
+main #content-left nav ul,
+main #content-left nav li,
+main #content-left nav .accordion {
+  width: 100%;
+}
+
+main #content-left nav .Cube {
+  width: 100%;
+  padding: 0.45rem 0;
+  text-align: center;
+  line-height: 2.3rem;
+  background: unset;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 2.3rem;
+  padding: 1.85rem 0;
+}
+
+main #content-left nav .Cube a {
+  color: #fff;
+}
+
+main #content-left nav .Cube a h2 {
+  display: inline-block;
+  padding-left: 10px;
+  position: relative;
+  margin-left: 2.3rem;
+}
+
+main #content-left nav .Cube a h2::before {
+  position: absolute;
+  content: "";
+  background-image: url(/images/interview.png?167ae4471606df10c7ec7ce1e2c77650);
+  background-size: cover;
+  width: 2.3rem;
+  height: 2.3rem;
+  left: -2.3rem;
+  top: 0;
+}
+
+main #content-left nav .nav-btn {
+  margin-bottom: 1.85rem;
+}
+
+main #content-left nav .nav-btn .nav-btn-header {
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+main #content-left nav .nav-btn .nav-btn-header::before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+}
+
+main #content-left nav .nav-btn .nav-btn-header button {
+  width: 100%;
+  padding: 0.45rem 0;
+  text-align: center;
+  line-height: 1.75rem;
+  background: linear-gradient(to right, #688eaa, #324362);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.75rem;
+  border-radius: 0;
+  border: 0;
+}
+
+main #content-left nav .nav-btn .nav-btn-body a {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+main #content-mid {
+  min-height: 100vh;
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 7px 0px 5px rgba(0, 0, 0, 0.3);
+  flex: 1;
+}
+
+main #content-mid .container {
+  padding-top: 1.85rem;
+}
+
+main #content-mid .container #content #main .main_title .Cube {
+  width: 100%;
+  padding: 0.45rem 0;
+  text-align: center;
+  line-height: 1.75rem;
+  background: #295c82;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.75rem;
+}
+
+main #content-mid .container #content #main .area .area_title {
+  padding: 30px 0;
+}
+
+main #content-mid .container #content #main .area .area_title .Cube {
+  width: 100%;
+  padding: 0.45rem 0;
+  text-align: center;
+  line-height: 1.5rem;
+  background: #566b97;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+main #content-mid .container #content #main .area .area_content .SubTitle {
+  padding: 0 15px 15px 15px;
+}
+
+main #content-mid .container #content #main .area .area_content .SubTitle .Cube {
+  width: 100%;
+  padding: 0.45rem 0;
+  text-align: center;
+  line-height: 1.5rem;
+  background: #688eaa;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+main #content-mid .container #content #main .area .area_content .content .Cube {
+  width: 100%;
+  padding: 0.45rem 0;
+  text-align: center;
+  line-height: 1.25rem;
+  color: #1b433e;
+  border-bottom: solid 2px #1b433e;
+  font-size: 1.25rem;
+}
+
+main #content-right {
+  z-index: 1;
+  width: 350px;
+  background-color: #324362;
+}
+
+@media (max-width: 1024px) {
+  main #content-right {
+    width: 200px;
+  }
+}
+
+main #content-right #member .user-photo {
+  width: 10.625rem;
+  padding: 1.85rem 0;
+}
+
+main #content-right #member .user-photo img {
+  width: 100%;
+}
+
+main #content-right #member .Cube button {
+  width: 100%;
+  padding: 0.45rem 0;
+  text-align: center;
+  line-height: 1.75rem;
+  background: unset;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  padding: 0.45rem 0;
+  text-align: center;
+  line-height: 0.75rem;
+  background: #1b433e;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 0.75rem;
+}
+
+footer .text_size {
+  padding: 0 1rem;
+  position: absolute;
+  right: 0;
+}
+
+footer .text_size span {
+  padding: 0 1rem;
+}
+
